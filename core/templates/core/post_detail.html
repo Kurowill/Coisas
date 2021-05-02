@@ -4,9 +4,9 @@
 {% block content %} 
  
     <div class="post-entry">
-        <h2>{{ custom.titulo }}</a></h2>
-        <p>{{ custom.conteudo }}</p>
+        <h2>{{ object.titulo }}</a></h2>
+        <p>{{ object.conteudo }}</p>
     </div>
-
+    <a href="{{post.get_absolute_url_edit}}">Editar Postagem</a>
         
 {% endblock content %}
